@@ -1,0 +1,525 @@
+body{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+.top-header{
+	width: 100%;
+	height: 35px;
+	display: flex;
+	border-bottom: 1px solid #D3D3D3;
+}
+.left-header{
+	flex-basis: 50%;
+	float: left; 
+}
+.first,.second,.third,.fourth{
+	width:100px;
+	height: 35px;
+	border-right: 1px solid #D3D3D3;
+	display: inline-block;
+}
+.first,.second,.third,.fourth, a{
+	text-decoration: none;
+	color: black;
+}
+.first,.second,.third,.fourth, p{
+	text-align: center;
+	text-transform: capitalize;
+	font-size: 10px;
+}
+.right-header{
+	position: absolute;
+	margin-left: 1500px;
+}
+.right-header a{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: #111111;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	display: inline-block;
+	margin-right: 20px;
+	margin-top: 10px;
+}
+.right-header a:hover{
+	border-bottom: 2px solid black;
+}
+.nav-bar{
+	width: 100%;
+	height: 75px;
+	border-bottom: 1px solid #D3D3D3;
+}
+.logo{
+	flex-basis: 35%;
+	float: left;
+	width: 55px;
+	margin-left: 20px;
+	margin-top: 15px;
+}
+.logo-img{
+	width: 100%;
+	height: 55px;
+	object-fit: cover;
+}
+.ulogo-img{
+	width: 100%;
+	height: 35px;
+	object-fit: cover;
+}
+.ulogo-img2{
+	width: 50%;
+	height: 35px;
+	object-fit: cover;
+}
+.nav-main{
+	position: absolute;
+	margin-left: 550px;
+	width: 900px;
+	height: 55px;
+}
+.nav-main a{
+	display: inline-block;
+	text-decoration: none;
+	font-family: "Nike TG", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	padding: 29px 40px;
+	letter-spacing: 0.1px;
+
+}
+.nav-main a:hover{
+	border-bottom: 2px solid black;
+}
+
+.nav-right{
+	float: right;
+	padding-right: 30px;
+	padding-top: 15px;
+}
+.nav-right input[type=text]{
+	padding-left: 40px;
+}
+.search-box{
+	width: 150px;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid #D3D3D3;
+}
+.nav-right i{
+	position:absolute;
+	padding-left: 10px;
+	padding-top: 10px;
+}
+.main-img{
+	position: relative;
+	width: 1790px;
+	height: 660px;
+	margin-top: 20px;
+	margin-left: 55px;
+}
+.main-img img{
+	width: 1790px;
+	height: 660px;
+	object-fit: cover;
+}
+.main-img video{
+	width: 1790px;
+	height: 660px;
+	object-fit: cover;
+}
+
+.main-txt{
+	position: absolute;
+	width: 1000px;
+	height: 240px;
+	background-color: transparent;
+	z-index: 1;
+	margin-left: 55px;
+	margin-top: -300px;
+}
+.main-txtv{
+	position: absolute;
+	width: 1000px;
+	height: 240px;
+	background-color: transparent;
+	z-index: 1;
+	margin-left: 55px;
+	margin-top: -400px;
+}
+.main-txt h1{
+	font-size: 75px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	letter-spacing: -7.5px;
+	word-spacing: -9px;
+}
+.main-txtv h1{
+	font-size: 75px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	color: white;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+}
+.main-txt p{
+	position: absolute;
+	margin-right: 500px;
+	margin-top: -50px;
+	font-size: 20px;
+}
+.main-txtv p{
+	position: absolute;
+	margin-right: 500px;
+	margin-top: -50px;
+	font-size: 20px;
+	color: white;
+}
+.main-txt button{
+	background-color: black;
+	border: none;
+	font-size: 16px;
+	width: 100px;
+	height: 40px;
+	color: white;
+	border-radius: 20px;
+	margin-right: 20px;
+}
+.main-txtv button{
+	background-color: black;
+	border: none;
+	font-size: 16px;
+	width: 100px;
+	height: 40px;
+	color: white;
+	border-radius: 20px;
+	margin-right: 20px;
+}
+.main-txt button:hover{
+	background-color: white;
+	color: black;
+}
+.main-txtv button:hover{
+	background-color: white;
+	color: black;
+}
+.slider{
+	width: 100%;
+	height: 500px;
+	margin-top: 20px;
+}
+.flex {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+}
+
+.slider-wrapper div { position: relative; }
+
+.slider-wrapper {
+  margin-left: 55px;
+}
+
+.slide-image { height: 500px; }
+
+.slide-image img {
+  width: 24vw;
+  height: 500px;
+  cursor: pointer;
+}
+
+.slide-content {
+  width: 250px;
+  background-color: #e6ffff;
+  color: black;
+  padding: 3vw 18vw 3vw 9vw;
+}
+
+.slide-title {
+  font-size: 40px;
+  font-weight: 900;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  padding-bottom: 1.8vw;
+}
+
+.slide-text {
+  font-size: 25px;
+  opacity: 0.8;
+  font-weight: 900;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  letter-spacing: 0.1vw;
+  text-transform: uppercase;
+  padding-bottom: 4vw;
+}
+
+.slide-more button{
+	background-color: black;
+	border: none;
+	font-size: 16px;
+	width: 150px;
+	height: 40px;
+	color: white;
+  	float: left;
+  	border-radius: 20px;
+}
+.slide-more button:hover{
+	background-color: #e0ebeb;
+	color: #cc9900;
+}
+.slide-bullet {
+  width: 0.5vw;
+  height: 0.5vw;
+  background-color: black;
+  border-radius: 200%;
+  position: relative;
+  margin-left: 1.2vw;
+}
+
+.slide-nav {
+  margin-left: 64vw;
+  margin-top: -5.5vw;
+}
+
+div.overlay-blue {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  transition: 0.5s ease all;
+}
+
+div.overlay-blue:hover { background-color: rgba(13, 27, 43, 0.5); }
+
+.arrows {
+  width: 3.5vw;
+  margin-top: -5.8vw;
+  margin-left: 50vw;
+  position: relative;
+}
+
+.arrow {
+  display: inline-block;
+  position: absolute;
+  width: 1.2vw;
+  height: 1.2vw;
+  background: transparent;
+  text-indent: -9999px;
+  border-top: 0.3vw solid black;
+  border-left: 0.3vw solid black;
+  transition: all .1s ease-in-out;
+  text-decoration: none;
+  color: transparent;
+}
+
+.arrow:hover {
+  border-color: green;
+  border-width: 0.4vw;
+}
+
+.arrow:before {
+  display: block;
+  height: 200%;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -50%;
+  content: "";
+  transform: rotate(45deg);
+}
+
+.arrow.prev {
+  transform: rotate(-45deg);
+  left: 0;
+}
+
+.arrow.next {
+  transform: rotate(135deg);
+  right: 0;
+}
+.trending-txt{
+	width: 100%;
+	height: 50px;
+	margin-top: 40px;
+	margin-left: 55px;
+}
+.trending-txt h1{
+	font-size: 30px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	letter-spacing: -2px;
+	word-spacing: -2px;
+	text-transform: uppercase;
+}
+.trending-content{
+	width: 100%;
+	height: 660px;
+}
+
+
+.nav-window{
+	width: 100%;
+	height: 400px;
+	background-color: white;
+	position: absolute;
+	z-index: 1;
+	display: none;
+}
+.featured-txt{
+	width: 100%;
+	height: 40px;
+	margin-top: 40px;
+}
+.featured{
+	width: 100%;
+	height: 660px;
+	margin-top: 20px;
+}
+.f1{
+	width: 885px;
+	height: 660px;
+	margin-left: 55px;
+	display: inline-block;
+}
+.f2{
+	width: 885px;
+	height: 660px;
+	margin-left: 20px;
+	display: inline-block;
+}
+
+.f1 img{
+	width: 885px;
+	height: 660px;
+	object-fit: cover;
+}
+.f2 img{
+	width: 885px;
+	height: 660px;
+	object-fit: cover;
+}
+.f1-txt{
+	position: absolute;
+	width: 500px;
+	height: 240px;
+	background-color: transparent;
+	z-index: 1;
+	margin-left: 55px;
+	margin-top: -300px;
+}
+.f1-txt h1{
+	font-size: 50px;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: 900;
+	color: white;
+	letter-spacing: 0px;
+	word-spacing: 0px;
+}
+.f1-txt p{
+	position: absolute;
+	margin-right: 500px;
+	margin-top: -50px;
+	font-size: 16px;
+	color: white;
+}
+.f1-txt button{
+	background-color: white;
+	border: none;
+	font-size: 16px;
+	width: 100px;
+	height: 40px;
+	color: black;
+	border-radius: 20px;
+	margin-right: 20px;
+}
+.f1-txt button:hover{
+	background-color: black;
+	color: white;
+}
+.new-season{
+	width: 100%;
+	height: 690px;
+	margin-top: 20px;
+}
+.n1{
+	width: 583.33px;
+	height: 690px;
+	margin-left: 55px;
+	display: inline-block;
+}
+.n2,.n3{
+	width: 583.33px;
+	height: 690px;
+	margin-left: 20px;
+	display: inline-block;
+}
+.new-season img{
+	width: 583.33px;
+	height: 660px;
+	object-fit: cover;
+}
+.new-season p{
+	font-family: "Nike TG", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: 900;
+	text-transform: capitalize;
+	margin-left: -495px;
+}
+
+.btm{
+	width: 100%;
+	height: 450px;
+	background-color: black;
+	margin-top: 40px;
+}
+.btm hr{
+	border: 0.5px solid white;
+	margin-left: 55px;
+	margin-right: 55px;
+}
+.btm-list1{
+	position: relative;
+	margin-top: 60px;
+	margin-left: 55px;
+	display: inline-block;
+}
+.btm h1{
+	font-family: "Nike TG", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 35px;
+	font-weight: 900;
+	position: relative;
+	margin-top: 20px;
+	text-align: center;
+	color: white;
+}
+.btm li{
+	margin-bottom: 20px;
+}
+.btm a{
+	color: white;
+	text-decoration: none;
+}
+.left-header-btm a{
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	line-height: 24px;
+	color: white;
+	text-decoration: none;
+	font-weight: 400;
+	font-style: normal;
+	display: inline-block;
+	margin-right: 40px;
+	margin-top: 10px;
+}
+.left-header-btm{
+	position: absolute;
+	margin-left: 58px;
+	z-index: 1;
+}
